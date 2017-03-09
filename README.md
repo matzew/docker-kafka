@@ -189,23 +189,15 @@ Java system properties by setting `KAFKA_JMX_OPTS` yourself---see `start.sh`.
 Fork Legacy
 -----------
 
-This image/repo was originally forked from [relateiq/kafka]. My original
+This image/repo was originally forked from [ches/kafka]. My original
 motivations for forking were:
 
-- Change the Kafka binary source to an official Apache artifact. RelateIQ's was
-  on a private S3 bucket, and this opaqueness is not suitable for a
-  publicly-shared image for reasons of trust.
-- Changes described in [this pull request](https://github.com/relateiq/docker-kafka/pull/4).
-
-After a period of unresponsiveness from upstream on pull requests and my repo
-tallying far more downloads on Docker Hub, I have made further updates and
-changes with the expectation of maintaining independently from here on. This
-project's changelog file describes these in detail.
+- updating to newer Kafka/Scala version.
 
 
 [Docker]: http://www.docker.io
 [Kafka]: http://kafka.apache.org
 [on the Docker registry]: https://registry.hub.docker.com/u/matzew/kafka/
-[relateiq/kafka]: https://github.com/relateiq/docker-kafka
+[ches/kafka]: https://github.com/ches/docker-kafka
 [the Kafka Quick Start]: http://kafka.apache.org/documentation.html#quickstart
 
