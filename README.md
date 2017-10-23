@@ -29,7 +29,7 @@ from [the Kafka Quick Start]:
 
 ```
 $ docker run -d --name zookeeper jplock/zookeeper:3.4.6
-$ docker run -d --name kafka --link zookeeper:zookeeper matzew/kafka
+$ docker run -d --name kafka --link zookeeper:zookeeper matzew/kafka:latest
 
 $ ZK_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' zookeeper)
 $ KAFKA_IP=$(docker inspect --format '{{ .NetworkSettings.IPAddress }}' kafka)
